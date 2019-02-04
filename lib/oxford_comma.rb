@@ -7,7 +7,7 @@ def oxford_comma(array)
     pos = 2
     [array[0...pos], array[pos..-1]].map { |x| x.join ', ' }.join(', and ')
   else array.length > 3
-    array.join(", ") << array.insert("and ", -1).join
+    array.join(", ") << array.insert("and ", -1)
 
 
   end
