@@ -4,8 +4,10 @@ def oxford_comma(array)
   elsif array.length == 2
     array.join(" and ")
   elsif array.length == 3
-    array.slice_after(2).map { |x| x.join "," }.join(" and ")
-    return array
+    pos = 2
+    [array[0...pos], array[pos..-1]].
+    map { |e| e.join ':' }.
+    join(' and ')
 
   end
 
