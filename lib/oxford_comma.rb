@@ -4,7 +4,6 @@ def oxford_comma(array)
   elsif array.length == 2
     array.join(" and ")
   elsif array.length == 3
-    array.slice_after(1).map { |x| x.join "," }.join(" and ")
     array.slice_after(2).map { |x| x.join "," }.join(" and ")
 
   end
