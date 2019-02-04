@@ -6,7 +6,7 @@ def oxford_comma(array)
   elsif array.length == 3
     pos = 2
     [array[0...pos], array[pos..-1]].
-    map { |x| x.join ',' }.
+    map { |x| x.join ', ' }.
     join(' and ')
 
   end
